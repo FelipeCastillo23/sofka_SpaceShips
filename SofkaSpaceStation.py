@@ -77,7 +77,8 @@ def filter_db():
     curr_values = get_ship_values()
     tree.delete(*tree.get_children())
     value_ref = ['name', 'type', 'country', 'year', 'active', 'weight', 'trust',
-                'fuel', 'function']
+                'fuel', 'function', 'load_weight', 'height', 'power', 'speed', 
+                'capacity', 'orbit_height']
     filter_query = """SELECT * FROM ship"""
     flag_start = 0
     for i in range(0,len(curr_values)):
@@ -277,8 +278,8 @@ lbl_speed = ttk.Label(f1, text='Speed:')
 lbl_speed.grid(column=4, row=0, sticky=tk.NW)
 
 speed = tk.IntVar()
-# height.set(0)
-spin_speed = ttk.Spinbox(f1, from_=0, to=999999, width=5, textvariable=height)
+# speed.set(0)
+spin_speed = ttk.Spinbox(f1, from_=0, to=999999, width=5, textvariable=speed)
 spin_speed.grid(column=5,row=0, sticky=tk.NW)
 
 # Capacity
@@ -286,9 +287,9 @@ lbl_capacity = ttk.Label(f1, text='Capacity:')
 lbl_capacity.grid(column=4, row=0, sticky=tk.NW)
 
 capacity = tk.IntVar()
-# height.set(0)
+# capacity.set(0)
 spin_capacity = ttk.Spinbox(f1, from_=0, to=999999, width=5, 
-                            textvariable=height)
+                            textvariable=capacity)
 spin_capacity.grid(column=5,row=0, sticky=tk.NW)
 
 # Orbit
@@ -297,7 +298,7 @@ lbl_orbit.grid(column=4, row=1, sticky=tk.NW)
 
 orbit = tk.IntVar()
 # height.set(0)
-spin_orbit = ttk.Spinbox(f1, from_=0, to=999999, width=5, textvariable=height)
+spin_orbit = ttk.Spinbox(f1, from_=0, to=999999, width=5, textvariable=orbit)
 spin_orbit.grid(column=5,row=1, sticky=tk.NW)
 
 # Add button
