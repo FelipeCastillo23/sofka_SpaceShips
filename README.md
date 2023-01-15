@@ -7,6 +7,9 @@ that can be found in the "reto-tecnico-training-desarrollo.pdf" file in the repo
 - Felipe Castillo / [LinkedIn](https://www.linkedin.com/in/felipe-castillo-patino/) -[GitHub](https://github.com/FelipeCastillo23)
 I'm a software junior developer taking my first steps in professional programming
 
+## Requirements
+- Python 3.9.5
+
 ## Running Tests
 
 Download the 3 .py files in the repo, and execute SofkaSpaceStation.py
@@ -32,6 +35,9 @@ After reading the base [blog](https://moaramore.com/2016/05/14/clasificacion-de-
 it's clear that there are 3 diferent types of space ships: Shuttles, Not Tripulated and Trippulated
 so i started getting the attributes from the specific data that is in the text, leading defining the
 following objects:
+
+
+![DER](https://user-images.githubusercontent.com/101073796/212503392-b467f80c-c223-4b0f-8a2d-53d3269fc0a2.PNG)
 
 Basic Space Ship (what they all have in common)
 - Name - Name of the ship and primary identificator
