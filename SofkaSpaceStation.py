@@ -142,6 +142,7 @@ def clear_input():
         entry_fuel.delete(0,'end')
         entry_function.delete('1.0','end')
         clear_input_optional()
+        tree.delete(*tree.get_children())
     except:
         pass
 
