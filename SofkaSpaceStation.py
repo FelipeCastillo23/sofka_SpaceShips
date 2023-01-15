@@ -53,7 +53,7 @@ def get_ship_values():
     ship.weight = int(spin_weight.get())
     ship.trust = int(spin_trust.get())
     ship.fuel = entry_fuel.get().capitalize()
-    ship.function = entry_function.get('1.0', tk.END).strip()
+    ship.function = entry_function.get('1.0', tk.END).strip().capitalize()
 
     ship.load_weight = int(spin_load.get())
     ship.height = int(spin_height.get())
@@ -147,7 +147,7 @@ def clear_input():
 
 # Root Window
 root = tk.Tk()
-root.title('Frame test')
+root.title('Sofka Space Station')
 root.geometry('1150x480')
 
 # Paned frames
